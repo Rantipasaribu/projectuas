@@ -78,27 +78,30 @@
         android:layout_marginTop="16dp"
         android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imageHome"
-            android:layout_width="0dp"
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/menuHome"
+            android:layout_width="5dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
             android:src="@drawable/ic_home"
             android:contentDescription="Home"/>
 
-        <ImageView
-            android:id="@+id/imageGraph"
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/menuGraph"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
             android:src="@drawable/ic_graph"
             android:contentDescription="Grafik"/>
 
-        <ImageView
-            android:id="@+id/imageAbout"
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/menuAbout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
             android:src="@drawable/ic_about"
             android:contentDescription="Tentang"/>
     </LinearLayout>
