@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -60,38 +62,15 @@
         android:text="Aplikasi OpenGov Indonesia diarahkan untuk menjadi alat efektif dalam menangani penanganan penduduk miskin. Fitur yang membatasi akses pengguna umum hanya melihat berita dan grafik, sementara admin memiliki kontrol penuh untuk menambahkan berita, menambahkan grafik penduduk miskin, dan menerima pengajuan, dirancang untuk memastikan keamanan dan keakuratan informasi yang disajikan kepada masyarakat. "
         android:textSize="16sp"/>
 
-    <LinearLayout
-        android:id="@+id/btn_home"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="670dp"
-        android:background="@color/white"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="395dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
 
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/home_user"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:contentDescription="Home"
-            android:src="@drawable/ic_home" />
-
-        <ImageView
-            android:id="@+id/graph_user"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:contentDescription="Grafik"
-            android:src="@drawable/ic_graph" />
-
-        <ImageView
-            android:id="@+id/about_user"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:contentDescription="Tentang"
-            android:src="@drawable/ic_about" />
-    </LinearLayout>
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="3dp"
+        app:itemIconSize="40dp"
+        app:menu="@menu/menu" />
 
 </RelativeLayout>
